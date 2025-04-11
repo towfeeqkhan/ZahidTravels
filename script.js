@@ -39,10 +39,3 @@ ScrollReveal().reveal(".header__container .section__header", {
   ...scrollRevealOption,
   delay: 500,
 });
-
-// Package cards animation
-ScrollReveal().reveal(".package__card", {
-  ...scrollRevealOption,
-  origin: "bottom",
-  delay: 500,
-});
