@@ -25,6 +25,42 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+// Slider functionality
+const sliderContainer = document.querySelector('.slider__container');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev__btn');
+const nextBtn = document.querySelector('.next__btn');
+
+let currentSlide = 0;
+const slideCount = slides.length;
+
+const updateSlider = () => {
+  sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+};
+
+const nextSlide = () => {
+  currentSlide = (currentSlide + 1) % slideCount;
+  updateSlider();
+};
+
+const prevSlide = () => {
+  currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+  updateSlider();
+};
+
+// Auto slide every 5 seconds
+const autoSlide = setInterval(nextSlide, 5000);
+
+prevBtn.addEventListener('click', () => {
+  clearInterval(autoSlide);
+  prevSlide();
+});
+
+nextBtn.addEventListener('click', () => {
+  clearInterval(autoSlide);
+  nextSlide();
+});
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",

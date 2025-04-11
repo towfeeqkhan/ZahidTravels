@@ -23,8 +23,8 @@
             <li><a href="#packages">Packages</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
           </ul>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section class="packages">
+    <section class="packages" id="packages">
       <div class="section__container packages__container">
         <div class="section__title">
           <h3 class="section__subheader">EXPLORE TOURS</h3>
@@ -276,37 +276,217 @@
       </div>
     </section>
 
+    <section class="gallery" id="gallery">
+      <div class="section__container gallery__container">
+        <div class="section__title">
+          <h3 class="section__subheader">MEMORIES</h3>
+          <h2 class="section__header">Our Gallery</h2>
+        </div>
+        
+        <div class="gallery__slider">
+          <div class="slider__container">
+            <div class="slide">
+              <img src="assets/Slideimage1.jfif" alt="Gallery Image 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/Slideimage2.jfif" alt="Gallery Image 2" />
+            </div>
+            <div class="slide">
+              <img src="assets/Slideimage3.jpg" alt="Gallery Image 3" />
+            </div>
+            <div class="slide">
+              <img src="assets/Slideimage4.webp" alt="Gallery Image 4" />
+            </div>
+            <div class="slide">
+              <img src="assets/Slideimage5.webp" alt="Gallery Image 5" />
+            </div>
+            <div class="slide">
+              <img src="assets/Slideimage6.webp" alt="Gallery Image 6" />
+            </div>
+          </div>
+          
+          <div class="slider__controls">
+            <button class="prev__btn">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="next__btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section__container reviews__container">
+        <div class="section__title">
+          <h3 class="section__subheader">TESTIMONIALS</h3>
+          <h2 class="section__header">What Our Clients Say</h2>
+        </div>
+        
+        <div class="reviews__grid">
+          <div class="review__card">
+            <div class="review__profile">
+              <img src="assets/Review1-modified.png" alt="Vishal" />
+              <h4>Vishal</h4>
+              <div class="review__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="review__text">
+              "Amazing experience with Zahid Tour and Travels! The Kashmir trip was perfectly organized. From the stunning locations to comfortable accommodations, everything exceeded our expectations. Highly recommended!"
+            </p>
+          </div>
+
+          <div class="review__card">
+            <div class="review__profile">
+              <img src="assets/Review2-modified.png" alt="Neha" />
+              <h4>Neha</h4>
+              <div class="review__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </div>
+            <p class="review__text">
+              "Our family trip to Gulmarg was unforgettable! The team took care of every detail, and the local guides were knowledgeable and friendly. The winter activities and scenic beauty were breathtaking."
+            </p>
+          </div>
+
+          <div class="review__card">
+            <div class="review__profile">
+              <img src="assets/Review3-modified.png" alt="Junaid" />
+              <h4>Junaid</h4>
+              <div class="review__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="review__text">
+              "Outstanding service! The Pahalgam package was excellent value for money. The team's attention to detail and prompt communication made our trip smooth and memorable. Will definitely book again!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <div class="section__title">
+          <h3 class="section__subheader">GET IN TOUCH</h3>
+          <h2 class="section__header">Contact Us</h2>
+        </div>
+        
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="ri-phone-line"></i>
+              <h4>Phone</h4>
+              <p>+91 123-456-7890</p>
+            </div>
+            <div class="contact__card">
+              <i class="ri-mail-line"></i>
+              <h4>Email</h4>
+              <p>info@zahidtours.com</p>
+            </div>
+            <div class="contact__card">
+              <i class="ri-map-pin-line"></i>
+              <h4>Location</h4>
+              <p>Srinagar, Kashmir</p>
+            </div>
+          </div>
+
+          <form class="contact__form">
+            <div class="form__group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form__group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form__group">
+              <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form__group">
+              <textarea placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn">
+              Send Message <span><i class="ri-send-plane-line"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
           <div class="logo footer__logo">
-            <a href="#">MNTN</a>
+            <a href="#">Zahid Tours</a>
           </div>
           <p>
-            Get out there & discover your next slope, mountains & destination!
+            Experience the beauty of Kashmir with our expertly curated travel packages. 
+            Your gateway to unforgettable adventures in paradise.
           </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-line"></i></a>
+          </div>
         </div>
         <div class="footer__col">
-          <h4>More on The Blog</h4>
+          <h4>Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="#">About MNTN</a></li>
-            <li><a href="#">Contributors & Writers</a></li>
-            <li><a href="#">Write For Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#places">Top Places</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4>More on MNTN</h4>
+          <h4>Support</h4>
           <ul class="footer__links">
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Press</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Info</h4>
+          <ul class="footer__links footer__contact">
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              Srinagar, Kashmir, India
+            </li>
+            <li>
+              <span><i class="ri-mail-fill"></i></span>
+              info@zahidtours.com
+            </li>
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              +91 123-456-7890
+            </li>
+            <li>
+              <span><i class="ri-time-fill"></i></span>
+              Mon-Sat: 9:00 AM - 8:00 PM
+            </li>
           </ul>
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
+        Copyright © 2024 Zahid Tour and Travels. All rights reserved.
       </div>
     </footer>
 
