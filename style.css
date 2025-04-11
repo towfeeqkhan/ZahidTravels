@@ -25,11 +25,14 @@
   position: relative;
   isolation: isolate;
   margin-bottom: 1rem;
-  padding-left: 5rem;
+  padding-left: 1rem;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
   color: var(--secondary-color);
+}
+.section__subheader-1 {
+  padding-left: 5rem;
 }
 
 .section__subheader::before {
