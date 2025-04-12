@@ -127,7 +127,7 @@ body {
       rgba(255, 255, 255, 0),
       var(--primary-color)
     ),
-    url("assets/header-1.jpg?v=2");
+    url("assets/header-2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
