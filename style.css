@@ -95,17 +95,6 @@
 img {
   display: flex;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-img[loading="lazy"] {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
-
-img[loading="lazy"].loaded {
-  opacity: 1;
 }
 
 a {
@@ -142,7 +131,6 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  will-change: transform;
   z-index: -1;
 }
 

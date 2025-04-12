@@ -75,24 +75,3 @@ ScrollReveal().reveal(".header__container .section__header", {
   ...scrollRevealOption,
   delay: 500,
 });
-
-// Handle lazy loading transitions
-document.addEventListener("DOMContentLoaded", function() {
-  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-  
-  const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.addEventListener('load', () => {
-          img.classList.add('loaded');
-        });
-        observer.unobserve(img);
-      }
-    });
-  });
-
-  lazyImages.forEach(img => {
-    imageObserver.observe(img);
-  });
-});
