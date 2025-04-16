@@ -456,7 +456,17 @@
             </div>
           </div>
 
-          <form class="contact__form">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="00c42282-5da8-42d4-85ef-f6cde17fdda9"
+            />
             <div class="form__group">
               <input type="text" placeholder="Your Name" name="Name" required />
             </div>
@@ -484,6 +494,13 @@
                 required
               ></textarea>
             </div>
+
+            <!-- Custom Confirmation / Success Page -->
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://www.zahidtourandtravels.com/Thank you.html"
+            />
 
             <button type="submit" class="btn">
               Send Message <span><i class="ri-send-plane-line"></i></span>
