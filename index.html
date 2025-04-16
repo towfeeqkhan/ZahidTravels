@@ -456,19 +456,50 @@
             </div>
           </div>
 
-          <form class="contact__form">
+          <form
+            action="https://api.staticforms.xyz/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <!-- Required: Your Static Forms API key -->
+            <input
+              type="hidden"
+              name="apiKey"
+              value="sf_82887ln243en0f59lji54a58"
+            />
             <div class="form__group">
-              <input type="text" placeholder="Your Name" required />
+              <input type="text" placeholder="Your Name" name="Name" required />
             </div>
             <div class="form__group">
-              <input type="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                placeholder="Your Email"
+                name="Email"
+                required
+              />
             </div>
             <div class="form__group">
-              <input type="tel" placeholder="Phone Number" required />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                name="Phone"
+                required
+              />
             </div>
             <div class="form__group">
-              <textarea placeholder="Your Message" rows="6" required></textarea>
+              <textarea
+                placeholder="Your Message"
+                rows="6"
+                name="Message"
+                required
+              ></textarea>
             </div>
+            <!-- Optional redirect URLs -->
+            <input
+              type="hidden"
+              name="redirectTo"
+              value="https://www.zahidtourandtravels.com/Thank you.html"
+            />
             <button type="submit" class="btn">
               Send Message <span><i class="ri-send-plane-line"></i></span>
             </button>
