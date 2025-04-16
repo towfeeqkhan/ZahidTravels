@@ -456,17 +456,7 @@
             </div>
           </div>
 
-          <form
-            action="https://api.staticforms.xyz/submit"
-            method="POST"
-            class="contact__form"
-          >
-            <!-- Required: Your Static Forms API key -->
-            <input
-              type="hidden"
-              name="apiKey"
-              value="sf_82887ln243en0f59lji54a58"
-            />
+          <form class="contact__form">
             <div class="form__group">
               <input type="text" placeholder="Your Name" name="Name" required />
             </div>
@@ -494,29 +484,8 @@
                 required
               ></textarea>
             </div>
-            
-            <!-- Add honeypot field for Static Forms -->
-            <input type="text" name="honeypot" style="display: none;" />
-            
-            <!-- reCAPTCHA integration -->
-            <div class="form__group">
-              <div 
-                class="g-recaptcha" 
-                data-sitekey="6LeD6xorAAAAAJRbkT_Z39Jg6BEF_mQY2ID5zR1z"
-                data-callback="onRecaptchaSuccess"
-                data-expired-callback="onRecaptchaExpired"
-              ></div>
-            </div>
 
-            <!-- Optional redirect URLs -->
-            <input
-              type="hidden"
-              name="redirectTo"
-              value="https://www.zahidtourandtravels.com/Thank you.html"
-            />
-            
-            <!-- Submit button -->
-            <button type="submit" class="btn" id="submitBtn">
+            <button type="submit" class="btn">
               Send Message <span><i class="ri-send-plane-line"></i></span>
             </button>
           </form>
@@ -590,24 +559,5 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
-
-    <!-- Move reCAPTCHA script to just before closing body tag -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
-    <!-- Add reCAPTCHA callback handling -->
-    <script>
-      function onRecaptchaSuccess() {
-        document.getElementById('submitBtn').removeAttribute('disabled');
-      }
-      
-      function onRecaptchaExpired() {
-        document.getElementById('submitBtn').setAttribute('disabled', 'disabled');
-      }
-      
-      // Disable submit button initially
-      document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('submitBtn').setAttribute('disabled', 'disabled');
-      });
-    </script>
   </body>
 </html>
